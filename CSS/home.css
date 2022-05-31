@@ -1,0 +1,39 @@
+root{
+    --espacamento: 3rem;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Kyiv*Type Serif;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    background-color: rgba(228, 38, 4, 0.767);
+}
+.title h1{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+.linha{
+    max-width: 100%;
+    height: 15rem;
+    margin: 0 auto;
+}
+.col1-de-4{
+    width: calc( ( 100% - var(--espacamento)*3 ) / 4 );
+    float: left;
+}
+.col1-de-4:not(:last-child) {
+    margin-right: var(--espacamento);
+}
