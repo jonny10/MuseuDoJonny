@@ -1,0 +1,23 @@
+{
+  "name": "museudojonny",
+  "version": "1.0.0",
+  "description": "Museu de obras artísticas de alguns artistas",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonny10/MuseuDoJonny.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonny10/MuseuDoJonny/issues"
+  },
+  "homepage": "https://github.com/jonny10/MuseuDoJonny#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

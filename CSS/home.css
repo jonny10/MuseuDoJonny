@@ -1,5 +1,5 @@
-root{
-    --espacamento: 3rem;
+:root{
+    --espaco: 3rem;
 }
 
 *,
@@ -17,23 +17,55 @@ body {
     font-family: Kyiv*Type Serif;
     box-sizing: border-box;
     font-size: 1.5rem;
-    background-color: rgba(228, 38, 4, 0.767);
+    background-color: rgba(119, 8, 8, 0.925);
 }
 .title h1{
     text-align: center;
     color: white;
     font-size: 5rem;
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 .linha{
-    max-width: 100%;
-    height: 15rem;
+    max-width: 90%;
+    height: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .col1-de-4{
-    width: calc( ( 100% - var(--espacamento)*3 ) / 4 );
+    width: calc( ( 100% - var(--espaco)*3 ) / 4 );
     float: left;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 1 2 28rem;
 }
 .col1-de-4:not(:last-child) {
-    margin-right: var(--espacamento);
+    margin-right: var(--espaco);
+}
+.amostra{
+    display: flex;
+    align-items: center;
+}
+.amostra img{
+    max-width: 20rem;
+    
+}
+.imgA1 img{
+    position:relative; 
+    z-index: 3;
+}
+.imgA2 img{
+  
+    position:relative; left: -16rem; top: -3rem; z-index: 2;
+}
+.imgA3 img{
+    position:relative; left: -30rem; top: -6rem; z-index: 1;
+}
+.menu-artista{
+    font-size: 1.5rem;
+    margin-top: 1.7rem;
+    color: white;
 }
