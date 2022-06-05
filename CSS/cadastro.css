@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Kyiv*Type Serif;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    background-color: rgba(119, 8, 8, 0.925);
+    margin-bottom: 10rem;
+}
+.title h1{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.linha{
+    height: 70rem;
+    width: 100%;
+}
+.CaixaDoForm{
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    border-image: url("../Assests/img/moldura.png") 200 / 10rem round;
+    border-style: solid;
+    padding: 6rem;
+}
+.formulario{
+    height: 100%;
+}
+.formDoCadastro{
+    height: 100%;
+    font-size: 4rem;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.INFO{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 4rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: rgba(119, 8, 8, 0.925);
+    border-radius: 5px;
+    border-color: white;
+}
+.descricaoBox textarea{
+    height: 20rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: rgba(119, 8, 8, 0.925);
+    border-radius: 5px;
+    border-color: white;
+}
+.butoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.butoes button{
+    height: 5rem;
+    width: 19rem;
+    font-size: 2.5rem;
+    color: rgba(119, 8, 8, 0.925);
+    border-radius: 5px;
+    border-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.barrafooter{
+    margin-top: 3rem;
+    height: 7rem;
+    width: 100%;
+    background-color: #3B2136;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    font-family: League Spartan;
+    font-size: 2.5rem;
+}
