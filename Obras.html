@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/Obras.CSS" rel="stylesheet">
+    <title>Obras do Artista</title>
+</head>
+    <body onload="fetchObras()" >
+        <header>
+            <div class="title">
+                <h1>Nome do artista</h1>
+            </div>
+        </header>
+        <section class="volta">
+            <div class="buttonvolt">
+                <a href="index.html"> < Voltar </a>
+            </div>
+        </section>
+        <div class="linhaDePesquisa">
+            <div class="barraDePesquisa">
+                <label for="search">Pesquisar: </label>
+                <input type="search" id="search" name="search"/>
+            </div>
+            <div class="ordenar">
+                <label for="order">Ordenar por: </label>
+                <select name="order" id="order">
+                    
+                </select>
+            </div>
+        </div>
+        <div class="quadros" id="mostrarQuadros">
+            
+        </div>
+        <footer>
+            <div class="barrafooter">
+                <div class="licenca">
+                    <p>Código Aberto</p>
+                </div>
+                <div class="desenvolvedor">
+                    <p>Desenvolvido por Jonathan Araujo Lopes</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="script/script.js"></script>
+</html>

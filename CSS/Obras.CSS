@@ -1,0 +1,104 @@
+:root{
+    --espaco: 3rem;
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Kyiv*Type Serif;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    background-color: rgba(119, 8, 8, 0.925);
+    margin-bottom: 10rem;
+}
+.title h1{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.buttonvolt{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+.buttonvolt a{
+    text-decoration: none;
+    color: white;
+    font-size: 5rem;
+}
+.linhaDePesquisa{
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.barraDePesquisa{
+    margin-right: 5rem;
+    color: white;
+    font-size: 2rem;
+}
+.ordenar{
+    margin-right: 5rem;
+    color: white;
+    font-size: 2rem;
+}
+.barraDePesquisa input{
+    border: 0.1rem solid black;
+    background-color: rgba(197, 20, 188, 0.788);
+    width: 20rem;
+}
+.quadros{
+    max-width: 80%;
+    height: 100%;
+    margin: 2.5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.quadro{
+    margin-bottom: 5rem ;
+    width: 100%;
+    margin-right: var(--espaco);
+    flex: 1 2 20rem;
+}
+.infos{
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    line-height: 3.7rem;
+}
+.imagemDoQuadro{
+    /*width: calc( (100% - var(--espaco) ) / 5 );*/
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.imagemDoQuadro img{ 
+    border-image: url("../Assests/img/moldura.png") 200 / 50px round;
+    border-style: solid;
+    border-width: 15px;
+    width: 100%;
+}
+.barrafooter{
+    margin-top: 3rem;
+    height: 7rem;
+    width: 100%;
+    background-color: #3B2136;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    font-family: League Spartan;
+    font-size: 2.5rem;
+}

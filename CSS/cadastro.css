@@ -23,6 +23,16 @@ body {
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
+.buttonvolt{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+.buttonvolt a{
+    text-decoration: none;
+    color: white;
+    font-size: 5rem;
+}
 .linha{
     height: 70rem;
     width: 100%;
