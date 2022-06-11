@@ -29,7 +29,7 @@ a{
     color: white;
     font-size: 5rem;
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 .linha{
     max-width: 70%;
@@ -37,6 +37,7 @@ a{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 12.3rem;
 }
 .col1-de-4{
     width: calc( ( 100% - var(--espaco)*3 ) / 4 );
@@ -58,21 +59,33 @@ a{
     max-width: 20rem;
 }
 .imgA1 img{
-    position: absolute; 
-    bottom: 3rem;
-    left: 3rem;
-    z-index: 2;
-}
-.imgA2 img{
     position: absolute;
     bottom: 0;
     z-index: 3;
 }
+.imgA2 img{
+    position: absolute; 
+    bottom: 5rem;
+    left: 3rem;
+    z-index: 2;
+}
 .imgA3 img{
     position: absolute; 
-    bottom: 6rem;
+    bottom: 9rem;
     left: 6rem;
     z-index: 1;
+}
+#obrapablo1{
+    left: 6rem;
+}
+#obrapablo2{
+    left: 9rem;
+}
+#obrasalvador1{
+    left: 6rem;
+}
+#obrasalvador2{
+    left: 9rem;
 }
 .menu-artista{
     font-size: 1.5rem;

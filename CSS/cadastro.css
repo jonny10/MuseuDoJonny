@@ -14,7 +14,7 @@ body {
     box-sizing: border-box;
     font-size: 1.5rem;
     background-color: rgba(119, 8, 8, 0.925);
-    margin-bottom: 10rem;
+    
 }
 .title h1{
     text-align: center;
@@ -34,16 +34,25 @@ body {
     font-size: 5rem;
 }
 .linha{
-    height: 70rem;
+    height: 100%;
     width: 100%;
+    margin-bottom: 8rem;
 }
 .CaixaDoForm{
-    width: 30%;
+    width: 40%;
     height: 100%;
     margin: 0 auto;
     border-image: url("../Assests/img/moldura.png") 200 / 10rem round;
     border-style: solid;
     padding: 6rem;
+}
+@media screen and (max-width: 1000px ) {
+    .CaixaDoForm{
+        width: 80%;
+    }
+    .title h1{
+        margin-top: 10rem;
+    }
 }
 .formulario{
     height: 100%;
@@ -68,6 +77,16 @@ input{
     color: rgba(119, 8, 8, 0.925);
     border-radius: 5px;
     border-color: white;
+    margin-bottom: 1.9rem;
+}
+.artista{
+    height: 7rem;
+    width: 100%;
+    font-size: 2.5rem;
+    color: rgba(119, 8, 8, 0.925);
+    border-radius: 5px;
+    border-color: white;
+    margin-top: 1.9rem;
 }
 .descricaoBox textarea{
     height: 20rem;
@@ -89,10 +108,21 @@ input{
     color: rgba(119, 8, 8, 0.925);
     border-radius: 5px;
     border-color: white;
+    margin-top: 7rem;
 }
-
-
-
+.butoes button:disabled{
+    background-color: transparent;
+    color: white;
+}
+.alert{
+    display: none;
+    border: 0.5rem solid yellow;
+    border-radius: 5px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-size: 2rem;
+    color: yellow
+}
 
 
 
@@ -116,7 +146,7 @@ input{
     height: 7rem;
     width: 100%;
     background-color: #3B2136;
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     justify-content: space-between;

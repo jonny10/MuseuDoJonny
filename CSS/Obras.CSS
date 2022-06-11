@@ -22,7 +22,7 @@ body {
 .title h1{
     text-align: center;
     color: white;
-    font-size: 5rem;
+    font-size: 8rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
@@ -45,36 +45,61 @@ body {
 .barraDePesquisa{
     margin-right: 5rem;
     color: white;
-    font-size: 2rem;
+    font-size: 5rem;
+}
+.search{
+    font-size: 3rem;
+    width: 33rem;
+    border: 0.1rem solid black;
+    background-color: #F47F7F;
+    border-radius: 5px;
+    color: white;
 }
 .ordenar{
     margin-right: 5rem;
     color: white;
-    font-size: 2rem;
+    font-size: 5rem;
 }
-.barraDePesquisa input{
-    border: 0.1rem solid black;
-    background-color: rgba(197, 20, 188, 0.788);
+.order{
+    background-color: #F47F7F;
     width: 20rem;
+    font-size: 3rem;
+    border-radius: 5px;
+    border: 0.1rem solid black;
+    color: white;
 }
 .quadros{
     max-width: 80%;
     height: 100%;
-    margin: 2.5rem auto;
+    margin: auto auto;
     display: flex;
     flex-wrap: wrap;
 }
 .quadro{
     margin-bottom: 5rem ;
     width: 100%;
-    margin-right: var(--espaco);
+    padding: var(--espaco);
     flex: 1 2 20rem;
+}
+@media screen and (max-width: 930px ) {
+    .title h1{
+        margin-top: 10rem;
+    }
+}
+@media screen and (max-width: 700px ) {
+    .linhaDePesquisa{
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 .infos{
     width: 100%;
     color: white;
     font-size: 2rem;
-    line-height: 3.7rem;
+    line-height: 3rem;
+}
+.infos div{
+    margin-bottom: 2rem;
 }
 .imagemDoQuadro{
     /*width: calc( (100% - var(--espaco) ) / 5 );*/
@@ -82,9 +107,9 @@ body {
     margin-bottom: 1rem;
 }
 .imagemDoQuadro img{ 
-    border-image: url("../Assests/img/moldura.png") 200 / 50px round;
+    border-image: url("../Assests/img/moldura.png") 200 / 200px round;
     border-style: solid;
-    border-width: 15px;
+    border-width: 6rem;
     width: 100%;
 }
 .barrafooter{

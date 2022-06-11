@@ -2,13 +2,14 @@
     //echo "script de leitura do banco de dados";
 
     $dbUser = 'root';
-    $dbPassword = 'ifsp';
+    $dbPassword = '';
     $dbName = 'bdmuseu';
     $dbHost = 'localhost';
     $connection = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
     if ( $connection ){
         //echo "conexão efetuada com sucesso";
-        $query = "select * from obra;";
+        //verificar
+        $query = "select idObra, nomeObra, DATE_FORMAT(dataObra, '%d/%m/%Y') as dataObra, descricaoObra, urlObra, ArtistaDaObra from obra;";
         $results = mysqli_query( $connection , $query);
         $obras = [];
         $index = 0;
