@@ -8,7 +8,7 @@ create table artista(
 
 CREATE TABLE obra (
   idObra int NOT NULL primary key auto_increment,
-  nomeObra varchar(50) NOT NULL,
+  nomeObra varchar(50) NOT NULL unique,
   dataObra date,
   descricaoObra varchar(300) NOT NULL,
   urlObra varchar(300) NOT NULL,
@@ -30,7 +30,7 @@ ALTER TABLE artista ADD COLUMN IdDoArtista int primary key not null auto_increme
 ALTER TABLE artista DROP COLUMN idArtista;
 
 select * from artista;
-select idObra, nomeObra, DATE_FORMAT(dataObra, '%d/%m/%Y') as dataObra, descricaoObra, urlObra, ArtistaDaObra from obra;
+select idObra, nomeObra, DATE_FORMAT(dataObra, '%d/%m/%Y') as dataObra, descricaoObra, urlObra from obra where ArtistaDaObra = 1;
 
 
 DELETE FROM artista WHERE idArtista=1;
