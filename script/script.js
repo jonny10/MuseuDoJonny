@@ -55,7 +55,12 @@ const showObras = (obras) => {
 
 const fetchObras = () => {
     //console.log('cheguei na script para carregar as obras');
-    fetch('http://localhost:8000/getObras.php')
+    var url_atual = window.location.href;
+    console.log(url_atual)
+    const myArray = url_atual.split("=");
+    console.log(myArray);
+    id = myArray[1];
+    fetch('http://localhost:8000/getObras.php?autor='+id)
         .then((response) => {
             if (response.status >= 200 && response.status<300){
                 return response.json()
@@ -74,6 +79,7 @@ const checkForm = {
     nameAlert: false,
     alertaDescricao: false,
     obraURL: false,
+    artistaAlert: false,
 }
 
 document.getElementById('nome').addEventListener('input', function (e) {
@@ -100,6 +106,23 @@ document.getElementById('descricao').addEventListener('input', function (e) {
     enableButton();
 });
 
+var select = document.getElementById('artista');
+var value = select.options[select.selectedIndex].value;
+console.log(value); 
+
+document.getElementById('artista').addEventListener('change', function(e) {
+    const artistaAlert = e.target.value;
+    console.log(artistaAlert); 
+    if(artistaAlert != 0){
+        document.getElementById('alertaArtista').style.display = "none";
+        checkForm.artistaAlert = true;
+    } else {
+        document.getElementById('alertaArtista').style.display = "block";
+        checkForm.artistaAlert = false;
+    }
+    enableButton();
+})
+
 document.getElementById('image').addEventListener('input', function (e) {
     const obraURL = e.target.value
     if(validURL(obraURL)) {
@@ -122,9 +145,10 @@ function validURL(str) {
     return !pattern.test(str);
   }
 
+
 function enableButton() {
     const buttonEnviar = document.getElementById("buttonCadastrar");
-    if (checkForm.nameAlert && checkForm.obraURL && checkForm.alertaDescricao) {
+    if (checkForm.nameAlert && checkForm.obraURL && checkForm.alertaDescricao && checkForm.artistaAlert) {
             buttonEnviar.disabled = false;
     } else {
         buttonEnviar.disabled = true;

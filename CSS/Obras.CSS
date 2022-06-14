@@ -80,6 +80,7 @@ body {
     width: 100%;
     padding: var(--espaco);
     flex: 1 2 20rem;
+    min-width: 35rem;
 }
 @media screen and (max-width: 930px ) {
     .title h1{

@@ -49,13 +49,16 @@
                             </div>
                         </div>
                         <div class="artista INFO">
-                            <select  class="artista" name="artista">
-                                <option selected>Escolha o artista da obra</option>
+                            <select  class="artista" name="artista" id="artista">
+                                <option value="0" selected>Escolha o artista da obra</option>
                                 <option value="1">Frida Khalo</option>
                                 <option value="2">Pablo Naruda</option>
                                 <option value="3">Salvador Allende</option>
                                 <option value="4">Anita Malfatti</option>
                             </select>
+                            <div class="alert" id="alertaArtista">
+                                <p>⚠ selecione um artista ⚠</p>
+                            </div>
                         </div>
                         <div class="butoes INFO">
                             <button disabled id="buttonCadastrar" type="submit">Cadastrar</button>
@@ -76,6 +79,6 @@
             </div>
         </div>
     </footer>
-<script src="/script/script.js" ></script>
+<script src="script/script.js" ></script>
 </body>
 </html>

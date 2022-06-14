@@ -1,15 +1,23 @@
 <?php
     //echo "script de leitura do banco de dados";
-
+    
+    $url = $_SERVER['REQUEST_URI'];
+    //echo "<br/>".$url."<br/>";
+    $id = parse_url($url, PHP_URL_QUERY);
+    //echo "<br/>".$id."<br/>";
+    parse_str( $id, $artistadaObra);
+    //var_dump($artistadaObra);
+    //echo "<br/>".$artistadaObra["autor"]."<br/>";
     $dbUser = 'root';
-    $dbPassword = '';
+    $dbPassword = 'ifsp';
     $dbName = 'bdmuseu';
     $dbHost = 'localhost';
     $connection = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
     if ( $connection ){
         //echo "conexão efetuada com sucesso";
         //verificar
-        $query = "select idObra, nomeObra, DATE_FORMAT(dataObra, '%d/%m/%Y') as dataObra, descricaoObra, urlObra, ArtistaDaObra from obra;";
+        $query = "select idObra, nomeObra, DATE_FORMAT(dataObra, '%d/%m/%Y') as dataObra, descricaoObra, urlObra from obra where ArtistaDaObra = ".$artistadaObra["autor"].";";
+        //echo $query;
         $results = mysqli_query( $connection , $query);
         $obras = [];
         $index = 0;

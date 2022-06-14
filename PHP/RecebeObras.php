@@ -10,7 +10,7 @@
     $artistaObra = $_GET['artista'];
 
     $dbUser = 'root';
-    $dbPassword = '';
+    $dbPassword = 'ifsp';
     $dbName = 'bdmuseu';
     $dbHost = 'localhost';
     $connection = mysqli_connect($dbHost, $dbUser, $dbPassword, $dbName);
